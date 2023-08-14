@@ -1,0 +1,20 @@
+@import url(ds_header.css);
+@import url(ds_footer.css);
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgb(111, 117, 117);
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        background-color: white;
+    }
+}
