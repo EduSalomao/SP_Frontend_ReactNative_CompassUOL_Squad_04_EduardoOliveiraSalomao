@@ -1,0 +1,48 @@
+@import url(ms_header.css);
+@import url(ms_footer.css);
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: rgb(111, 117, 117);
+}
+
+@media screen and (max-width: 700px) {
+    main {
+        padding-top: 20px;
+        background-color: white;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .description {
+        display: inline;
+        text-align: center;
+    }
+
+    .description #blogdescription, h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-style: bold;
+    }
+
+    .description #blogdescription {
+        font-size: 36px;
+    }
+
+    .description #whydescription {
+        font-family: 'Xanh Mono', monospace;
+        font-size: 16px;
+    }
+
+    #master {
+        max-width: 100%;
+        max-height: 235px;
+        object-fit: cover;
+    }
+}
