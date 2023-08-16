@@ -42,6 +42,8 @@ body {
         font-size: 16px;
         padding-left: 30px;
         padding-right: 30px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgb(48, 70, 71);
     }
 
     #master {
@@ -50,9 +52,22 @@ body {
         object-fit: cover;
     }
 
-    .articles img {
-        width: 100vw;
-        height: auto;
+    .articleContainer img {
+        width: 80vw;
+        height: 194px;
         object-fit: cover
+    }
+
+    .articleContainer h2 {
+        font-family: 'Xanh Mono', monospace;
+        text-align: center;
+        font-style: normal;
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+
+    .articleContainer p {
+        align-items: center;
+        justify-content: center;
     }
 }

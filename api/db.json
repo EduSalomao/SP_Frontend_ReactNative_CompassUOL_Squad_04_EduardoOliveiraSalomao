@@ -1,0 +1,19 @@
+{
+    "articles": [
+        {
+            "id": 1,
+            "title": "Pokémon: Ash Ketchum becomes world champion after 25 years of anime",
+            "imageUrl": "../image/ashchampion.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Pokémon Scarlet and Violet: The new gen",
+            "imageUrl": "../image/newgeration.jpeg"
+        },
+        {
+            "id": 3,
+            "title": "Ash Ketchum lost to Vasco by 2x0",
+            "imageUrl": "../image/ashlousetournament.jpg"
+        }
+    ]
+}
