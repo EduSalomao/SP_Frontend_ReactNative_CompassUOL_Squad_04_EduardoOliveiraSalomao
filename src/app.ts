@@ -23,21 +23,28 @@ async function renderArticles() {
         return;
     }
 
-    const response = await fetch('../api/db.json');
-    const mockData = await response.json() as { articles: Article[] };
+    try {
+        const response = await fetch('../api/db.json');
+        const data = await response.json();
 
-    mockData.articles.forEach(article => {
-        const articleP = document.createElement("p");
-        articleP.className = "article";
+        const mockData: Article[] = data.articles;
 
-        const img = createImageElement(article.imageUrl);
-        const h2 = createHeadingElement(article.title);
+        mockData.forEach(article => {
+            const articleLink = document.createElement("a");
+            articleLink.href = `templates/article.html?id=${article.id}`; // Adjust the path to the "article.html" file
+            articleLink.className = "article";
 
-        articleP.appendChild(img);
-        articleP.appendChild(h2);
+            const img = createImageElement(article.imageUrl);
+            const h2 = createHeadingElement(article.title);
 
-        articleContainer.appendChild(articleP);
-    });
+            articleLink.appendChild(img);
+            articleLink.appendChild(h2);
+
+            articleContainer.appendChild(articleLink);
+        });
+    } catch (error) {
+        console.error("Error fetching and rendering articles:", error);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", renderArticles);

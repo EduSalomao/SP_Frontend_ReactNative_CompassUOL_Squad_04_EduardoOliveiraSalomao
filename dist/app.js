@@ -46,7 +46,7 @@ function createHeadingElement(title) {
 }
 function renderArticles() {
     return __awaiter(this, void 0, void 0, function () {
-        var articleContainer, response, mockData;
+        var articleContainer, response, data, mockData, error_1;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -54,22 +54,32 @@ function renderArticles() {
                     if (!articleContainer) {
                         return [2 /*return*/];
                     }
-                    return [4 /*yield*/, fetch('../api/db.json')];
+                    _a.label = 1;
                 case 1:
+                    _a.trys.push([1, 4, , 5]);
+                    return [4 /*yield*/, fetch('../api/db.json')];
+                case 2:
                     response = _a.sent();
                     return [4 /*yield*/, response.json()];
-                case 2:
-                    mockData = _a.sent();
-                    mockData.articles.forEach(function (article) {
-                        var articleP = document.createElement("p");
-                        articleP.className = "article";
+                case 3:
+                    data = _a.sent();
+                    mockData = data.articles;
+                    mockData.forEach(function (article) {
+                        var articleLink = document.createElement("a");
+                        articleLink.href = "templates/article.html?id=".concat(article.id); // Adjust the path to the "article.html" file
+                        articleLink.className = "article";
                         var img = createImageElement(article.imageUrl);
                         var h2 = createHeadingElement(article.title);
-                        articleP.appendChild(img);
-                        articleP.appendChild(h2);
-                        articleContainer.appendChild(articleP);
+                        articleLink.appendChild(img);
+                        articleLink.appendChild(h2);
+                        articleContainer.appendChild(articleLink);
                     });
-                    return [2 /*return*/];
+                    return [3 /*break*/, 5];
+                case 4:
+                    error_1 = _a.sent();
+                    console.error("Error fetching and rendering articles:", error_1);
+                    return [3 /*break*/, 5];
+                case 5: return [2 /*return*/];
             }
         });
     });

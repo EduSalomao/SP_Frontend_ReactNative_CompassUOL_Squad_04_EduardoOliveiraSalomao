@@ -3,9 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Article</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@800&family=Xanh+Mono&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="../style/ms_main.css">
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html"><h1>POKÉ JOURNAL</h1></a>
+        <section class="menuoptions">
+            <ul>
+                <li>blog</li>
+                <li>about</li>
+                <li>links</li>
+                <li>projects</li>
+            </ul>
+        </section>
+        <section class="buttom">
+            <button id="hamburgerButton" class="hamburger-button" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </section>
+    </header>
+    <main>
+        <h1 id="articleTitle"></h1>
+        <picture>
+            <img id="articleImage" src="" alt="Article Image">
+        </picture> 
+        </section class="articleContent">
+            <section class="authorContent">
+                <img id="authorImage" src="" alt="">
+                <h1 id="authorName"></h1>
+                <p id="authorDate"></p>
+                <ul>
+                    <li><a id="facebook" href="">LINK</a></li>
+                    <li><a id="twitter" href="">LINK</a></li>
+                    <li><a id="whatsapp" href="">LINK</a></li>
+                </ul>
+                <p id="authorComment"></p>
+            </section>
+            <img id="articleImage" src="" alt="Article Image">
+            <h2 id="articleTitle"></h2>
+        </section>
+    </main>
+    <footer>
+        <h1>POKÉ JOURNAL</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos labore, eius nobis itaque voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section class="socialmedias">
+            <ul>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">RSS</a></li>
+            </ul>
+        </section>
+        <p id="copy">&copy;2012-2020 Poke Journal Co.<br>All rights reserved.</p>
+    </footer>
+    <script src="../dist/article.js"></script>
 </body>
 </html>

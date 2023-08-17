@@ -4,7 +4,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100vw;
 }
 
 body {
@@ -28,7 +27,7 @@ body {
 
     .description #blogdescription, h1 {
         font-family: 'Times New Roman', Times, serif;
-        font-style: bold;
+        font-weight: bold;
     }
 
     .description #blogdescription {
@@ -46,28 +45,32 @@ body {
         border-bottom: 2px solid rgb(48, 70, 71);
     }
 
-    #master {
+    #articleImage {
         width: 100vw;
+        max-width: 100%;
         height: 235px;
         object-fit: cover;
     }
 
     .articleContainer img {
-        width: 80vw;
+        padding: 0 20px;
+        width: 80%;
         height: 194px;
-        object-fit: cover
+        object-fit: cover;
     }
 
     .articleContainer h2 {
         font-family: 'Xanh Mono', monospace;
+        font-weight: 100;
         text-align: center;
         font-style: normal;
         font-size: 22px;
+        padding: 0 40px;
         padding-bottom: 20px;
     }
 
-    .articleContainer p {
-        align-items: center;
-        justify-content: center;
+    .article {
+        display: block;
+        text-align: center;
     }
 }
