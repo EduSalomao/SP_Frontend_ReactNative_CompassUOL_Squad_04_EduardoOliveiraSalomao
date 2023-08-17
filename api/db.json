@@ -15,5 +15,19 @@
             "title": "Ash Ketchum lost to Vasco by 2x0",
             "imageUrl": "../image/ashlousetournament.jpg"
         }
+    ],
+
+    "authors": [
+        {
+            "id": 1,
+            "authorImageUrl": "",
+            "name": "Mika Matikaien",
+            "date": "Apr 15, 2020",
+            "socialmedia": {
+                "facebookUrl": "",
+                "twitterUrl": "",
+                "whatsappUrl": ""
+            }
+        }
     ]
 }

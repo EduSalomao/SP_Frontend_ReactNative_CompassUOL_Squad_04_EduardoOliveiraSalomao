@@ -34,54 +34,49 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-function createImageElement(imageUrl) {
-    var img = document.createElement("img");
-    img.src = imageUrl;
-    return img;
+function getArticleIdFromUrl() {
+    var urlParams = new URLSearchParams(window.location.search);
+    return parseInt(urlParams.get('id') || '0', 10);
 }
-function createHeadingElement(title) {
-    var h2 = document.createElement("h2");
-    h2.textContent = title;
-    return h2;
-}
-function renderArticles() {
+function fetchArticleDetails(id) {
     return __awaiter(this, void 0, void 0, function () {
-        var articleContainer, response, data, mockData, error_1;
+        var response, data, article;
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0:
-                    articleContainer = document.querySelector(".articleContainer");
-                    if (!articleContainer) {
-                        return [2 /*return*/];
-                    }
-                    _a.label = 1;
+                case 0: return [4 /*yield*/, fetch('../api/db.json')];
                 case 1:
-                    _a.trys.push([1, 4, , 5]);
-                    return [4 /*yield*/, fetch('../api/db.json')];
-                case 2:
                     response = _a.sent();
                     return [4 /*yield*/, response.json()];
-                case 3:
+                case 2:
                     data = _a.sent();
-                    mockData = data.articles;
-                    mockData.forEach(function (article) {
-                        var articleLink = document.createElement("a");
-                        articleLink.href = "templates/article.html?id=".concat(article.id); // Adjust the path to the "article.html" file
-                        articleLink.className = "article";
-                        var img = createImageElement(article.imageUrl);
-                        var h2 = createHeadingElement(article.title);
-                        articleLink.appendChild(img);
-                        articleLink.appendChild(h2);
-                        articleContainer.appendChild(articleLink);
-                    });
-                    return [3 /*break*/, 5];
-                case 4:
-                    error_1 = _a.sent();
-                    console.error("Error fetching and rendering articles:", error_1);
-                    return [3 /*break*/, 5];
-                case 5: return [2 /*return*/];
+                    article = data.articles.find(function (article) { return article.id === id; });
+                    return [2 /*return*/, article];
             }
         });
     });
 }
-document.addEventListener("DOMContentLoaded", renderArticles);
+function renderArticleDetails() {
+    return __awaiter(this, void 0, void 0, function () {
+        var articleId, article, articleImage, articleTitle;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    articleId = getArticleIdFromUrl();
+                    return [4 /*yield*/, fetchArticleDetails(articleId)];
+                case 1:
+                    article = _a.sent();
+                    if (article) {
+                        articleImage = document.getElementById('articleImage');
+                        articleTitle = document.getElementById('articleTitle');
+                        articleImage.src = article.imageUrl;
+                        articleTitle.textContent = article.title;
+                    }
+                    else {
+                        console.error('Article not found.');
+                    }
+                    return [2 /*return*/];
+            }
+        });
+    });
+}
+document.addEventListener('DOMContentLoaded', renderArticleDetails);
