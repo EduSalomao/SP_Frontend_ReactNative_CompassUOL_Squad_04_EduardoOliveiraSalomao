@@ -55,9 +55,26 @@ function fetchArticleDetails(id) {
         });
     });
 }
+function fetchCommentDetails(id) {
+    return __awaiter(this, void 0, void 0, function () {
+        var response, data, comment;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0: return [4 /*yield*/, fetch('../api/db.json')];
+                case 1:
+                    response = _a.sent();
+                    return [4 /*yield*/, response.json()];
+                case 2:
+                    data = _a.sent();
+                    comment = data.comments.find(function (comment) { return comment.id === id; });
+                    return [2 /*return*/, comment];
+            }
+        });
+    });
+}
 function renderArticleDetails() {
     return __awaiter(this, void 0, void 0, function () {
-        var articleId, article, articleImage, articleTitle;
+        var articleId, article, comments, articleImage, articleTitle, authorName, authorDate, authorImageUrl, authorFacebook, authorTwitter, authorWhatsapp, authorComment;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
@@ -65,6 +82,9 @@ function renderArticleDetails() {
                     return [4 /*yield*/, fetchArticleDetails(articleId)];
                 case 1:
                     article = _a.sent();
+                    return [4 /*yield*/, fetchCommentDetails(articleId)];
+                case 2:
+                    comments = _a.sent();
                     if (article) {
                         articleImage = document.getElementById('articleImage');
                         articleTitle = document.getElementById('articleTitle');
@@ -74,9 +94,30 @@ function renderArticleDetails() {
                     else {
                         console.error('Article not found.');
                     }
+                    if (comments) {
+                        authorName = document.getElementById('authorName');
+                        authorDate = document.getElementById('authorDate');
+                        authorImageUrl = document.getElementById('authorImage');
+                        authorFacebook = document.getElementById('facebook');
+                        authorTwitter = document.getElementById('twitter');
+                        authorWhatsapp = document.getElementById('whatsapp');
+                        authorComment = document.getElementById('authorComment');
+                        authorName.textContent = comments.name;
+                        authorDate.textContent = comments.date;
+                        authorImageUrl.src = comments.authorImageUrl;
+                        authorFacebook.href = comments.socialmedia.facebookUrl;
+                        authorTwitter.href = comments.socialmedia.twitterUrl;
+                        authorWhatsapp.href = comments.socialmedia.whatsappUrl;
+                        authorComment.textContent = comments.comment;
+                    }
+                    else {
+                        console.error('Comments not found.');
+                    }
                     return [2 /*return*/];
             }
         });
     });
 }
-document.addEventListener('DOMContentLoaded', renderArticleDetails);
+document.addEventListener('DOMContentLoaded', function () {
+    renderArticleDetails();
+});
