@@ -20,39 +20,42 @@
     "comments": [
         {
             "id": 1,
-            "authorImageUrl": "",
+            "authorImageUrl": "../image/profilepicture.png",
             "name": "Mika Matikaien",
             "date": "Apr 15, 2020",
-            "comment": "kkk",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
             "socialmedia": {
                 "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
-            }
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
         },
         {
             "id": 2,
-            "authorImageUrl": "",
+            "authorImageUrl": "../image/filosofopython.jpeg",
             "name": "Filosofo Python",
             "date": "Apr 99, 2000 a.c",
-            "comment": "kkk",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
             "socialmedia": {
                 "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
-            }
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
         },
         {
             "id": 3,
-            "authorImageUrl": "",
-            "name": "Payat",
+            "authorImageUrl": "../image/dimitrypayet.webp",
+            "name": "Dimitri Payet",
             "date": "Apr 15, 2024",
-            "comment": "kkk",
+            "comment": "O cara perdeu pra nóis KKKKKKKKKKKKKKKKKKKKKKKKKK Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
             "socialmedia": {
                 "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
-            }
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
         }
     ]
 }

@@ -31,7 +31,7 @@ async function renderArticles() {
 
         mockData.forEach(article => {
             const articleLink = document.createElement("a");
-            articleLink.href = `templates/article.html?id=${article.id}`; // Adjust the path to the "article.html" file
+            articleLink.href = `templates/article.html?id=${article.id}`;
             articleLink.className = "article";
 
             const img = createImageElement(article.imageUrl);
@@ -47,4 +47,7 @@ async function renderArticles() {
     }
 }
 
-document.addEventListener("DOMContentLoaded", renderArticles);
+document.addEventListener('DOMContentLoaded', () => {
+    renderArticles();
+});
+

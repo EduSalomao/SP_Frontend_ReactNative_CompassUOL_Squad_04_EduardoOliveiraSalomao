@@ -3,7 +3,7 @@ interface Article {
     title: string;
     imageUrl: string;
 }
-
+ 
 interface Comment {
     id: number;
     authorImageUrl: string;
@@ -15,6 +15,7 @@ interface Comment {
         twitterUrl: string;
         whatsappUrl: string;
     };
+    info: string;
 }
 
 function getArticleIdFromUrl(): number {
@@ -55,10 +56,12 @@ async function renderArticleDetails() {
         const authorName = document.getElementById('authorName') as HTMLBodyElement;
         const authorDate = document.getElementById('authorDate') as HTMLBodyElement;
         const authorImageUrl = document.getElementById('authorImage') as HTMLImageElement;
+        const authorImageUrl2 = document.getElementById('authorImage2') as HTMLImageElement;
         const authorFacebook = document.getElementById('facebook') as HTMLAnchorElement;
         const authorTwitter = document.getElementById('twitter') as HTMLAnchorElement;
         const authorWhatsapp = document.getElementById('whatsapp') as HTMLAnchorElement;
         const authorComment = document.getElementById('authorComment') as HTMLBodyElement;
+        const authorInfo = document.getElementById('authorInfo') as HTMLBodyElement;
 
         authorName.textContent = comments.name;  
         authorDate.textContent = comments.date;  
@@ -67,11 +70,14 @@ async function renderArticleDetails() {
         authorTwitter.href = comments.socialmedia.twitterUrl;  
         authorWhatsapp.href = comments.socialmedia.whatsappUrl; 
         authorComment.textContent = comments.comment;
+        authorImageUrl2.src = comments.authorImageUrl;
+        authorInfo.textContent = comments.name + comments.info;
 
     } else {
         console.error('Comments not found.');  
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
     renderArticleDetails();

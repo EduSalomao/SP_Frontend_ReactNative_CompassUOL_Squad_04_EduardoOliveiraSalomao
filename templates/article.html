@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
+    <title>POKEVERSE</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@800&family=Xanh+Mono&display=swap');
@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><h1>POKÉ JOURNAL</h1></a>
+        <a href="../index.html"><h1>POKEVERSE</h1></a>
         <section class="menuoptions">
             <ul>
                 <li>blog</li>
@@ -34,25 +34,70 @@
         <h1 id="articleTitle"></h1>
         <picture>
             <img id="articleImage" src="" alt="Article Image">
-        </picture> 
-        </section class="articleContent">
+        </picture>
+
+        <section class="container-author">
             <section class="authorContent">
                 <img id="authorImage" src="" alt="">
-                <h1 id="authorName"></h1>
-                <p id="authorDate"></p>
-                <ul>
-                    <li><a id="facebook" href="">LINK</a></li>
-                    <li><a id="twitter" href="">LINK</a></li>
-                    <li><a id="whatsapp" href="">LINK</a></li>
-                </ul>
-                <p id="authorComment"></p>
+                <section id="authorInformations">
+                    <h1 id="authorName"></h1>
+                    <p id="authorDate"></p>        
+                </section>
             </section>
-            <img id="articleImage" src="" alt="Article Image">
-            <h2 id="articleTitle"></h2>
+            <section id="authorSocial">
+                <ul>
+                    <li><a id="facebookshare" href=""><img src="../image/icons8-facebook-24 (2).png" alt=""></a></li>
+                    <li><a id="twittershare" href=""><img src="../image/icons8-twitter-24 (1).png" alt=""></a></li>
+                    <li><a id="whatsappshare" href=""><img src="../image/icons8-whatsapp-24.png" alt=""></a></li>
+                </ul> 
+            </section>
+            <p class="text" id="authorComment"></p>
+        </section>
+
+        <h2 class="paddingTitle">Next on the pipeline</h2>
+        <section class="container-article">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia quod unde consequatur enim maiores, commodi iusto amet ipsa nisi possimus dolorem quis nam laborum perspiciatis earum, ad eveniet ut.</p>
+            <img id="articleImage" src="../image/gengarpicture.jpg" alt="">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit recusandae repellendus, quos perferendis, vitae labore quibusdam saepe similique quia id architecto laudantium. Excepturi provident praesentium hic repellendus odit sed.br<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores sunt quam odit quos animi veritatis reprehenderit at, voluptas delectus dolores minima eius corrupti tenetur sequi harum mollitia quidem quas.</p>
+            <section>
+        </section>
+            <h2 class="paddingTitle">share:</h2>
+            <section id="authorSocial">
+                <ul>
+                    <li><a id="facebook" href=""><img src="../image/icons8-facebook-24 (2).png" alt=""></a></li>
+                    <li><a id="twitter" href=""><img src="../image/icons8-twitter-24 (1).png" alt=""></a></li>
+                    <li><a id="whatsapp" href=""><img src="../image/icons8-whatsapp-24.png" alt=""></a></li>
+                </ul> 
+            </section>
+            <p class="text">Tags: culture</p>
+            <section id="borderline" class="authorContent">
+                <img id="authorImage2" src="" alt="">
+                <section class="authorInformations">
+                    <p id="authorInfo"></p>    
+                </section>
+            </section>
+        </section>
+
+        <h2 id="nextTitle">What to read next</h2>
+        <section class="container-nextread">
+            <section class="articleContainer">
+            
+            </section>
+        </section>
+
+        <section class="container-newsletter">
+            <h2 id="newsletter1">Sign up for<br>the newsletter</h2>
+            <p>if you want relevant updates occasionally, sing up for the private newsletter. Your email is never shared.</p>
+            <div id="newsletterbox">
+                <div id="emailbox">
+                    <input type="email" placeholder="Enter your email here...">
+                </div>
+                <button>Sing Up</button>
+            </div>
         </section>
     </main>
     <footer>
-        <h1>POKÉ JOURNAL</h1>
+        <h1>POKEVERSE</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus eos labore, eius nobis itaque voluptatem! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <section class="socialmedias">
             <ul>
@@ -61,8 +106,10 @@
                 <li><a href="">RSS</a></li>
             </ul>
         </section>
-        <p id="copy">&copy;2012-2020 Poke Journal Co.<br>All rights reserved.</p>
+        <p id="copy">&copy;2023 Poke Journal Co.<br>All rights reserved.</p>
     </footer>
-    <script src="../dist/article.js"></script>
+    
+    <script src="../dist/getArticles.js"></script>
+    <script src="../dist/renderNextArticles.js"></script>
 </body>
 </html>
