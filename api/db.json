@@ -1,26 +1,79 @@
 {
     "articles": [
         {
+            "id": 0,
+            "title": "A few words about this blog platform, Ghost, and how this site was made",
+            "imageUrl": "../image/articlesimages/gengarpicture.jpg"
+        },
+        {
             "id": 1,
             "title": "Pokémon: Ash Ketchum becomes world champion after 25 years of anime",
-            "imageUrl": "../image/ashchampion.jpg"
+            "imageUrl": "../image/articlesimages/ashchampion.jpg"
         },
         {
             "id": 2,
             "title": "Pokémon Scarlet and Violet: The new gen",
-            "imageUrl": "../image/newgeration.jpeg"
+            "imageUrl": "../image/articlesimages/newgeration.jpeg"
         },
         {
             "id": 3,
             "title": "Ash Ketchum lost to Vasco by 2x0",
-            "imageUrl": "../image/ashlousetournament.jpg"
+            "imageUrl": "../image/articlesimages/ashlousetournament.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Pokémon cards: What parents need to know",
+            "imageUrl": "../image/articlesimages/cards.jpeg"
+        },
+        {
+            "id": 5,
+            "title": "Charizard: A big fire dragon!",
+            "imageUrl": "../image/articlesimages/charizardimage.jpeg"
+        },
+        {
+            "id": 6,
+            "title": "The pokemon gameboy evolution",
+            "imageUrl": "../image/articlesimages/gameboy.jpeg"
+        },
+        {
+            "id": 7,
+            "title": "Check out the new Pokemon Horizons trailer now!",
+            "imageUrl": "../image/articlesimages/gilme.jpeg"
+        },
+        {
+            "id": 8,
+            "title": "Winter has arrived in the pokemon world, get ready!",
+            "imageUrl": "../image/articlesimages/inverno.jpeg"
+        },
+        {
+            "id": 9,
+            "title": "Pokemon GO: The game that allows Pokemon immersion in the real world!",
+            "imageUrl": "../image/articlesimages/pokemongo.jpeg"
+        },
+        {
+            "id": 10,
+            "title": "Pokemon's Live-Action Netflix Show Gets Promising Update (Report)",
+            "imageUrl": "../image/articlesimages/pokemon-netflix.jpeg"
         }
     ],
 
     "comments": [
         {
+            "id": 0,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Eduardo Salomão",
+            "date": "Sept 20, 2023",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
             "id": 1,
-            "authorImageUrl": "../image/profilepicture.png",
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
             "name": "Mika Matikaien",
             "date": "Apr 15, 2020",
             "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
@@ -33,9 +86,9 @@
         },
         {
             "id": 2,
-            "authorImageUrl": "../image/filosofopython.jpeg",
+            "authorImageUrl": "../image/authorsimage/filosofopython.jpeg",
             "name": "Filosofo Python",
-            "date": "Apr 99, 2000 a.c",
+            "date": "Oct 99, 2000 a.c",
             "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
             "socialmedia": {
                 "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
@@ -46,16 +99,107 @@
         },
         {
             "id": 3,
-            "authorImageUrl": "../image/dimitrypayet.webp",
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
             "name": "Dimitri Payet",
-            "date": "Apr 15, 2024",
-            "comment": "O cara perdeu pra nóis KKKKKKKKKKKKKKKKKKKKKKKKKK Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "date": "Apr 20, 2024",
+            "comment": "Perdeu pro vascão kkkkkkkkkkkk",
             "socialmedia": {
                 "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
                 "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
             },
             "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 4,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Richard Rasmuskens",
+            "date": "Dec 12, 2011",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 5,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Cristiano Ronaldo",
+            "date": "Jun 2, 2007",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 6,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Hebert Richards",
+            "date": "Fev 29, 2001",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 7,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Elon Musk",
+            "date": "May 17, 1998",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 8,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "N'gannou",
+            "date": "Apr 30, 2020",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 9,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Everson Pelé",
+            "date": "Sept 19, 2002",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
+        },
+        {
+            "id": 10,
+            "authorImageUrl": "../image/authorsimage/profilepicture.png",
+            "name": "Léo Jardins",
+            "date": "Jun 15, 2046",
+            "comment": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi culpa maxime quasi beatae nobis? Odit, eaque debitis.",
+            "socialmedia": {
+                "facebookUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "twitterUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass",
+                "whatsappUrl": "https://github.com/EduSalomao/Eduardo-Salomao-Compass"
+            },
+            "info": " is the best goalkeeper in the history Lorem insupur Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure assumenda fuga fugiat eum, quidem perspiciatis perferendis ad voluptatum voluptate eos dolorum nisi cul"
         }
     ]
 }

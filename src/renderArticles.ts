@@ -30,17 +30,19 @@ async function renderArticles() {
         const mockData: Article[] = data.articles;
 
         mockData.forEach(article => {
-            const articleLink = document.createElement("a");
-            articleLink.href = `templates/article.html?id=${article.id}`;
-            articleLink.className = "article";
-
-            const img = createImageElement(article.imageUrl);
-            const h2 = createHeadingElement(article.title);
-
-            articleLink.appendChild(img);
-            articleLink.appendChild(h2);
-
-            articleContainer.appendChild(articleLink);
+            if (article.id != 0) {
+                const articleLink = document.createElement("a");
+                articleLink.href = `templates/article.html?id=${article.id}`;
+                articleLink.className = "article";
+    
+                const img = createImageElement(article.imageUrl);
+                const h2 = createHeadingElement(article.title);
+    
+                articleLink.appendChild(img);
+                articleLink.appendChild(h2);
+    
+                articleContainer.appendChild(articleLink);
+            }
         });
     } catch (error) {
         console.error("Error fetching and rendering articles:", error);

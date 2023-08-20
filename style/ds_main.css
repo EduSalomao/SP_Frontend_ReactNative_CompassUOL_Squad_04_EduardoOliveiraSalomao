@@ -1,7 +1,7 @@
-@import url(ms_header.css);
-@import url(ms_footer.css);
-    
-@media (max-width: 765px) {
+@import url(ds_footer.css);
+@import url(ds_header.css);
+
+@media (min-width: 766px) {
     body, html {
         margin: 0;
         padding: 0;
@@ -14,8 +14,17 @@
         background-color: #efebeb;
     }
 
-    #articleTitle, #articlesection {
-        text-align: center;
+    picture {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #articleImage {
+        width: 854px;
+        height: 533px;
+        object-fit: cover;
     }
 
     .description {
@@ -28,33 +37,40 @@
     }
 
     .description #blogtitle {
-        font-size: 36px;
-        padding: 0 20px;
+        font-size: 54px;
+        padding: 0 20%;
     }
 
     .description #blogsubtitle {
         font-family: 'Xanh Mono', monospace;
-        font-size: 16px;
+        font-weight: 800;
+        font-size: 20px;
         padding: 0 30px 30px;
         border-bottom: 2px solid #304647;
     }
 
-    /* Article Images and Text */
-    #articleImage {
-        width: 100vw;
-        max-width: 100%;
-        height: 235px;
-        object-fit: cover;
+    #articlesection {
+        text-align: center;
+    }
+
+    #allarticlesbox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
     .articleContainer {
         text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 700px;
     }
 
     .articleContainer img {
         padding: 0 20px;
-        width: 80%;
-        height: 194px;
+        width: 304px;
+        height: 176px;
         object-fit: cover;
     }
 
@@ -62,8 +78,9 @@
         font-family: 'Times New Roman', Times, serif;
         font-weight: bold;
         font-style: normal;
-        font-size: 22px;
+        font-size: 25px;
         padding: 0 40px 20px;
+        width: 260px;
     }
 
     .articleContainer a {
@@ -75,6 +92,27 @@
         text-align: center;
     }
 
+    #articleTitle {
+        font-size: 54px;
+        text-align: center;
+        padding: 0 20%;
+        padding-bottom: 30px;
+        
+    }
+
+    #articleImageBox {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #articleImage {
+        width: 854px;
+        height: 570px;
+        object-fit: cover;
+    }
+
     .authorContent {
         display: flex;
         padding: 5% 5% 0;
@@ -82,6 +120,10 @@
 
     #borderline {
         border-bottom: 3px solid black;
+    }
+
+    #authorComment {
+        padding: 0;
     }
 
     #authorName, #authorDate {
@@ -101,9 +143,12 @@
         border-radius: 50%;
     }
 
+    .container-author {
+        padding: 0 30%;
+    }
+
     .authorInformations {
         display: flex;
-        width: 100%;
         padding-left: 5%;
     }
 
@@ -113,7 +158,7 @@
 
     #authorSocial ul {
         display: flex;
-        align-items: center;
+        
         list-style: none;
         width: 85%;
     }
@@ -122,32 +167,45 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        height: 50px;
+        width: 80px;
+        height: 40px;
         border: 1px solid #d3d3d3;
+
+    }
+
+    #whatsappli {
+        display: none;
     }
 
     .text {
-        padding: 0 5%;
+        padding: 0 30%;
     }
 
-    #nextTitle {
+    .paddingTitle {
+        padding-left: 30%;
+    }
+
+    .container-newsletter {
+        border: 2px solid black;
+        border-top: 8px solid black;
+        width: 500px;
+        height: 350px;
         text-align: center;
     }
 
-    .container-nextread, .container-newsletter {
-        text-align: center;
+    #authorSocialBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .container-nextread {
-        border-bottom: 7px solid black;
+    #newsletter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 50px;
     }
-
-    .container-newsletter p {
-        padding: 0 10%;
-        font-size: 16px;
-    }
-
     #newsletter1 {
         display: flex;
         font-size: 29px;
@@ -155,7 +213,6 @@
         padding-top: 15%;
         align-items: center;
         justify-content: center;
-        border-top: 3px solid black;
     }
 
     #newsletterbox {
@@ -163,7 +220,6 @@
         display: flex;
         justify-content: center;
         padding-bottom: 18%;
-        border-bottom: 3px solid black;
     }
 
     #newsletterbox input {
@@ -188,10 +244,9 @@
         width: 108px;
     }
 
-
-    .paddingTitle {
-        padding-left: 5%;
+    .mainarticleimage {
+        width: 100vw !important;
+        height: 900px !important;
     }
-
 }
 

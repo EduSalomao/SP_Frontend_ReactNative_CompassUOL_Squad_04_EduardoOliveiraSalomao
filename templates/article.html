@@ -10,16 +10,17 @@
     </style>
 
     <link rel="stylesheet" href="../style/ms_main.css">
+    <link rel="stylesheet" href="../style/ds_main.css">
 </head>
 <body>
     <header>
-        <a href="../index.html"><h1>POKEVERSE</h1></a>
+        <a id="title" href="../index.html"><h1>POKEVERSE</h1></a>
         <section class="menuoptions">
             <ul>
-                <li>blog</li>
-                <li>about</li>
-                <li>links</li>
-                <li>projects</li>
+                <li class="lioptions"><a href="">blog</a></li>
+                <li class="lioptions"><a href="">about</a></li>
+                <li class="lioptions"><a href="">links</a></li>
+                <li class="lioptions"><a href="">projects</a></li>
             </ul>
         </section>
         <section class="buttom">
@@ -33,68 +34,76 @@
     <main>
         <h1 id="articleTitle"></h1>
         <picture>
-            <img id="articleImage" src="" alt="Article Image">
+            <img class="mainarticleimage" id="articleImage" src="" alt="Article Image">
         </picture>
 
         <section class="container-author">
             <section class="authorContent">
-                <img id="authorImage" src="" alt="">
+                <div id="imagebox"><img id="authorImage" src="" alt=""></div>
                 <section id="authorInformations">
                     <h1 id="authorName"></h1>
-                    <p id="authorDate"></p>        
+                    <p id="authorDate"></p>
+                           
                 </section>
+                <section id="authorSocial">
+                    <ul>
+                        <li><a id="facebookshare" href=""><img src="../image/icons8-facebook-24 (2).png" alt=""></a></li>
+                        <li><a id="twittershare" href=""><img src="../image/icons8-twitter-24 (1).png" alt=""></a></li>
+                        <li id="whatsappli"><a id="whatsapp" href=""><img src="../image/icons8-whatsapp-24.png" alt=""></a></li>
+                    </ul> 
+                </section> 
             </section>
-            <section id="authorSocial">
-                <ul>
-                    <li><a id="facebookshare" href=""><img src="../image/icons8-facebook-24 (2).png" alt=""></a></li>
-                    <li><a id="twittershare" href=""><img src="../image/icons8-twitter-24 (1).png" alt=""></a></li>
-                    <li><a id="whatsappshare" href=""><img src="../image/icons8-whatsapp-24.png" alt=""></a></li>
-                </ul> 
-            </section>
+            
             <p class="text" id="authorComment"></p>
         </section>
 
         <h2 class="paddingTitle">Next on the pipeline</h2>
         <section class="container-article">
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius officia quod unde consequatur enim maiores, commodi iusto amet ipsa nisi possimus dolorem quis nam laborum perspiciatis earum, ad eveniet ut.</p>
-            <img id="articleImage" src="../image/gengarpicture.jpg" alt="">
+            <div id="articleImageBox"><img id="articleImage" src="../image/articlesimages/gengarpicture.jpg" alt=""></div>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic velit recusandae repellendus, quos perferendis, vitae labore quibusdam saepe similique quia id architecto laudantium. Excepturi provident praesentium hic repellendus odit sed.br<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint asperiores sunt quam odit quos animi veritatis reprehenderit at, voluptas delectus dolores minima eius corrupti tenetur sequi harum mollitia quidem quas.</p>
             <section>
         </section>
             <h2 class="paddingTitle">share:</h2>
-            <section id="authorSocial">
-                <ul>
-                    <li><a id="facebook" href=""><img src="../image/icons8-facebook-24 (2).png" alt=""></a></li>
-                    <li><a id="twitter" href=""><img src="../image/icons8-twitter-24 (1).png" alt=""></a></li>
-                    <li><a id="whatsapp" href=""><img src="../image/icons8-whatsapp-24.png" alt=""></a></li>
-                </ul> 
-            </section>
+            <div id="authorSocialBox">
+                <section id="authorSocial">
+                    <ul>
+                        <li><a id="facebook" href=""><img src="../image/icons8-facebook-24 (2).png" alt=""></a></li>
+                        <li><a id="twitter" href=""><img src="../image/icons8-twitter-24 (1).png" alt=""></a></li>
+                        <li><a id="whatsapp" href=""><img src="../image/icons8-whatsapp-24.png" alt=""></a></li>
+                    </ul> 
+                </section>
+            </div>
             <p class="text">Tags: culture</p>
-            <section id="borderline" class="authorContent">
-                <img id="authorImage2" src="" alt="">
-                <section class="authorInformations">
-                    <p id="authorInfo"></p>    
+            <section class="container-author">
+                <section id="borderline" class="authorContent">
+                    <img id="authorImage2" src="" alt="">
+                    <section class="authorInformations">
+                        <p id="authorInfo"></p>    
+                    </section>
                 </section>
             </section>
         </section>
 
-        <h2 id="nextTitle">What to read next</h2>
-        <section class="container-nextread">
+        <h2 id="articlesection">What to read next</h2>
+        <div id="allarticlesbox">
             <section class="articleContainer">
-            
+                
             </section>
-        </section>
+        </div>
 
-        <section class="container-newsletter">
-            <h2 id="newsletter1">Sign up for<br>the newsletter</h2>
-            <p>if you want relevant updates occasionally, sing up for the private newsletter. Your email is never shared.</p>
-            <div id="newsletterbox">
-                <div id="emailbox">
-                    <input type="email" placeholder="Enter your email here...">
+        <div id="newsletter">
+            <section class="container-newsletter">
+                <h2 id="newsletter1">Sign up for<br>the newsletter</h2>
+                <p>if you want relevant updates occasionally, sing up for the private newsletter. Your email is never shared.</p>
+                <div id="newsletterbox">
+                    <div id="emailbox">
+                        <input type="email" placeholder="Enter your email here...">
+                    </div>
+                    <button>Sing Up</button>
                 </div>
-                <button>Sing Up</button>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
     <footer>
         <h1>POKEVERSE</h1>

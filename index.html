@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ProjectBlog</title>
+    <title>POKEVERSE</title>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@800&family=Xanh+Mono&display=swap');
     </style>
 
     <link rel="stylesheet" href="style/ms_main.css">
+    <link rel="stylesheet" href="style/ds_main.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><h1>POKEVERSE</h1></a>
+        <a id="title" href="index.html"><h1>POKEVERSE</h1></a>
         <section class="menuoptions">
             <ul>
-                <li>blog</li>
-                <li>about</li>
-                <li>links</li>
-                <li>projects</li>
+                <li class="lioptions"><a href="">blog</a></li>
+                <li class="lioptions"><a href="">about</a></li>
+                <li class="lioptions"><a href="">links</a></li>
+                <li class="lioptions"><a href="">projects</a></li>
             </ul>
         </section>
         <section class="buttom">
@@ -32,7 +33,7 @@
     </header>
     <main>
         <picture>
-            <img id="articleImage" src="image/gengarpicture.jpg" alt="">
+            <a href="templates/article.html?id=0"><img id="articleImage" src="image/articlesimages/gengarpicture.jpg" alt=""></a>
         </picture>
 
         <section class="description">
@@ -41,9 +42,11 @@
         </section>
         
         <h1 id="articlesection">All Articles</h1>
-        <section class="articleContainer">
-            
-        </section>
+        <div id="allarticlesbox">
+            <section class="articleContainer">
+                
+            </section>
+        </div>
     </main>
     <footer>
         <h1>POKEVERSE</h1>

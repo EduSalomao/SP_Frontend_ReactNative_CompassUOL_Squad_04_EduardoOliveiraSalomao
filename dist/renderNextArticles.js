@@ -34,7 +34,7 @@ function renderNextArticles() {
             const articleId = getArticleIdFromUrl2();
             const mockData = data.articles;
             mockData.forEach(article => {
-                if (article.id !== articleId) {
+                if (article.id !== articleId && article.id !== 0) {
                     const articleLink = document.createElement("a");
                     articleLink.href = `article.html?id=${article.id}`; // Adjust the path to the "article.html" file
                     articleLink.className = "article";
