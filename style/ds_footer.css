@@ -1,13 +1,14 @@
 @media (min-width: 766px) { 
     footer {
-        color: white;
+        color: rgb(0, 0, 0);
         padding: 0;
         margin: 0;
         width: 100vw;
-        background-color: rgb(0, 0, 0);
+        background-color: #2C363F;
         text-align: center;
         font-size: 150%;
     }
+
 
     footer a {
         color: white;

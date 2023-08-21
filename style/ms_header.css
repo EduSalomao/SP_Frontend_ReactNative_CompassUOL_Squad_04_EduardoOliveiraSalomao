@@ -18,6 +18,23 @@
         font-family: 'El Messiri', sans-serif;
     }
 
+    .titleblog {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #titleimage {
+        width: 20px;
+        height: 20px;
+    }
+
+    #title2 {
+        text-decoration: none;
+        color: black;
+        padding: 0;
+    }
+
     header a {
         text-decoration: none;
     }
