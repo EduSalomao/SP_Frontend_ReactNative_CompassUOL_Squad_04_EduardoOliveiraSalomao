@@ -1,38 +1,34 @@
 # PokeVerse
 
-Bem-vindo ao PokeVerse! Um blog dedicado a trazer as últimas notícias e informações sobre o mundo dos Pokémons.
+Welcome to PokeVerse! A blog dedicated to bringing you the latest news and information about the world of Pokémon.
 
-## Descrição do Desafio
+## Challenge Description
 
-Este projeto foi desenvolvido como parte do desafio lançado pela Compass UOL. O desafio consistia em criar um blog utilizando TypeScript, CSS e HTML.
+This project was developed as part of the challenge issued by Compass UOL. The challenge involved creating a website using TypeScript, CSS, and HTML to present news related to Pokémon.
 
-## Sobre o Projeto
+## About the Project
 
-O PokeVerse é um blog online que oferece uma plataforma para os fãs dos Pokémons ficarem atualizados com as últimas notícias, eventos e informações sobre este incrível universo. O site é uma fonte confiável e informativa para todos os treinadores e entusiastas.
+PokeVerse is an online blog that provides a platform for Pokémon fans to stay updated with the latest news, events, and information about this incredible universe. The site serves as a reliable and informative source for all trainers and enthusiasts.
 
-## Funcionalidades Principais
+## Key Features
 
-- Visualização de artigos sobre notícias dos Pokémons.
-- Layout responsivo para uma experiência de usuário agradável em todos os dispositivos.
-- Navegação intuitiva para explorar os artigos disponíveis.
+- Viewing articles about Pokémon news.
+- Responsive layout for a pleasant user experience across all devices.
+- Intuitive navigation for exploring the available articles.
 
-## Instalação
+## Installation
 
-1. Clone este repositório para o seu computador.
-2. Abra o arquivo `index.html` em um navegador web.
+1. Clone this repository to your computer.
+2. Open the `index.html` file in a web browser.
 
-## Como Usar
+## How to Use
 
-Basta abrir o site no navegador de sua escolha para acessar os artigos e notícias relacionados aos Pokémons.
+Simply open the website in a browser of your choice to access articles and news related to Pokémon.
 
-## Contribuição
+## Contribution
 
-No momento, não estamos aceitando contribuições externas para este projeto.
+At the moment, we are not accepting external contributions to this project.
 
-## Licença
+## Contact
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## Contato
-
-Se você tiver alguma dúvida, sugestão ou feedback, sinta-se à vontade para entrar em contato através do email: eduardosalomao33@gmail.com.
+If you have any questions, suggestions, or feedback, feel free to get in touch via email: eduardosalomao33@gmail.com.
