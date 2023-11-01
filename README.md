@@ -23,7 +23,8 @@ PokeVerse is an online blog that provides a platform for Pokémon fans to stay u
 
 ## How to Use
 
-Simply open the website in a browser of your choice to access articles and news related to Pokémon.
+Simply open the website in a browser of your choice to access articles and news related to Pokémon. <br>
+You can access the hopes website given here: https://pokeverseblog.netlify.app
 
 ## Contact
 
