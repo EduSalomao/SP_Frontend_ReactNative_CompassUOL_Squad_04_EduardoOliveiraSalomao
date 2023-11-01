@@ -25,10 +25,6 @@ PokeVerse is an online blog that provides a platform for Pokémon fans to stay u
 
 Simply open the website in a browser of your choice to access articles and news related to Pokémon.
 
-## Contribution
-
-At the moment, we are not accepting external contributions to this project.
-
 ## Contact
 
 If you have any questions, suggestions, or feedback, feel free to get in touch via email: eduardosalomao33@gmail.com.
